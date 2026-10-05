@@ -1,3 +1,19 @@
-Elixir service that feels like OpenBao with a native sqlar-cas engine — Bao-shaped routes, SQLite-through-fabric-store storage, age v1.1.0 crypto, ReBAC via wraps.
+# service-sqlar-cas
 
-Operate: [`docs/operate.md`](docs/operate.md). Spec: [`../../2-contract/sqlar-cas`](../../2-contract/sqlar-cas). Dual-licensed Apache-2.0 / MIT.
+An Elixir HTTP service over an age-encrypted, content-addressed SQLite archive that answers who may read each object.
+
+## What it is for
+
+The HTTP layer only reads. The archive, its chunks and its relationships are written by mix tasks. [docs/operate.md](docs/operate.md) covers running it.
+
+## Build and run
+
+```sh
+mix deps.get
+mix test
+iex -S mix
+```
+
+## Licence
+
+The repository has no LICENSE file, so its licence is not stated.
