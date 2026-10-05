@@ -4,7 +4,7 @@ An Elixir HTTP service over an age-encrypted, content-addressed SQLite archive t
 
 ## What it is for
 
-The HTTP layer only reads. The archive, its chunks and its relationships are written by mix tasks. [docs/operate.md](docs/operate.md) covers running it.
+The HTTP layer only reads: health, readers, archive entries and chunks. The `rebac` mix task writes relationship tuples; nothing in this repository writes the archive or its chunks.
 
 ## Build and run
 
