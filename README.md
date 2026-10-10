@@ -16,4 +16,4 @@ iex -S mix
 
 ## Licence
 
-The repository has no LICENSE file, so its licence is not stated.
+MIT. See [LICENSE](LICENSE).
